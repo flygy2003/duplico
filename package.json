@@ -2,7 +2,7 @@
   "name": "electron-jsx-babel-boilerplate",
   "version": "1.0.0",
   "description": "Electron boilerplate project with React and babel",
-  "main": ".serve/app.js",
+  "main": "src/app.js",
   "scripts": {
     "install": "bower install",
     "start": "gulp serve",
@@ -18,6 +18,9 @@
   "dependencies": {
     "lodash": "^3.9.3",
     "react": "^0.13.3"
+  },
+  "scripts": {
+    "start": "electron ."
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.6.0",
