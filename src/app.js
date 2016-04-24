@@ -1,6 +1,3 @@
-'use strict';
-require('babel/polyfill');
-
 import app from 'app';
 import BrowserWindow from 'browser-window';
 import crashReporter from 'crash-reporter';
