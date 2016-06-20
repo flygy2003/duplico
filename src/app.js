@@ -1,11 +1,8 @@
-import app from 'app';
-import BrowserWindow from 'browser-window';
-import crashReporter from 'crash-reporter';
-import Menu from 'menu';
-import appMenu from './browser/menu/appMenu';
+import {app, BrowserWindow, crashReporter, Menu} from 'electron';
+import appMenu from './browser/menu/app-menu';
 
 let mainWindow = null;
-if(process.env.NODE_ENV === 'develop'){
+if (process.env.NODE_ENV === 'develop') {
   crashReporter.start();
   //appMenu.append(devMenu);
 }
@@ -20,6 +17,6 @@ app.on('ready', () => {
     width: 580,
     height: 365
   });
-  mainWindow.loadUrl('file://' + __dirname + '/renderer/index.html');
-});
 
+  mainWindow.loadURL(`file://${__dirname}/renderer/index.html`);
+});

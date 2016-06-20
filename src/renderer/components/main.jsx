@@ -1,18 +1,15 @@
-'use strict';
-
 import React from 'react';
-import shell from 'shell';
+import {shell} from 'electron';
 
-export class Main extends React.Component {
+class Main extends React.Component {
   state = {
     message: 'Hello, Electron'
   }
-  constructor () {
-    super();
+
+  openGithub() {
+    shell.openExternal('https://github.com/mnquintana/electron-jsx-babel-boilerplate');
   }
-  openGithub () {
-    shell.openExternal('https://github.com/Quramy/electron-jsx-babel-boilerplate');
-  }
+
   render() {
     return (
       <div className="container">
@@ -25,3 +22,5 @@ export class Main extends React.Component {
     );
   }
 }
+
+export default Main;
