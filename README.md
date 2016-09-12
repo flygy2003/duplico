@@ -1,10 +1,8 @@
-# electron-jsx-babel-boilerplate
+# electron-compile-universe
 
-This is a sample repository of an [Electron](http://electron.atom.io/) application, using [electron-compile](https://github.com/electron/electron-compile).
+This is a bare-bones example of an [Electron](http://electron.atom.io/) application, using [electron-compile](https://github.com/electron/electron-compile).
 
-Thanks to @Quarmy, who created the original version of this boilerplate.
-
-To see what's changed compared to the Gulp version, check out [the compare link](https://github.com/Quramy/electron-jsx-babel-boilerplate/compare/master...paulcbetts:master)
+Thanks to @Quarmy, who created the [original version of this boilerplate](https://github.com/Quramy/electron-jsx-babel-boilerplate), and @paulcbetts, who created the [original `electron-compile` version of this boilerplate](https://github.com/paulcbetts/electron-jsx-babel-boilerplate).
 
 ## Install
 
