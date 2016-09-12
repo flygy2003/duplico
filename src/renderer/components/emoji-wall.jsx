@@ -1,7 +1,4 @@
 import React from 'react';
-import {remote} from 'electron';
-
-const {BrowserWindow} = remote;
 
 export default class EmojiWall extends React.Component {
   constructor() {
