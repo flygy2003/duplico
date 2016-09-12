@@ -8,8 +8,9 @@ app.on('window-all-closed', () => {
 
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
-    width: 580,
-    height: 365
+    width: 700,
+    height: 760,
+    titleBarStyle: 'hidden-inset'
   });
 
   mainWindow.loadURL(`file://${__dirname}/renderer/index.html`);

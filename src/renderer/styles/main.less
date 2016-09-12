@@ -1,3 +1,5 @@
+@font-family: Lato, Helvetica, sans-serif;
+
 html,
 body {
   width: 100%;
@@ -7,14 +9,28 @@ body {
 body {
   cursor: default;
   -webkit-user-select: none;
-}
-
-a, a:hover, a:visited, a:active, a:focus {
-  text-decoration: none;
-}
-
-.main {
-  margin-top: 15px;
-  text-align: center;
+  font-family: @font-family;
+  overflow: hidden;
   -webkit-app-region: drag;
+  margin: 0;
+
+  a, a:hover, a:visited, a:active, a:focus {
+    text-decoration: none;
+  }
+
+  .main {
+    text-align: center;
+    -webkit-app-region: drag;
+  }
+
+  .emoji-wall {
+    img {
+      position: relative;
+      left: 14px;
+    }
+  }
+
+  * {
+    transition: all 1s ease;
+  }
 }
